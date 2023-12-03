@@ -20,9 +20,13 @@
   background-color: azure;
 }
 
+.sign-up-box {
+  background-image: linear-gradient(to left, blue, lightblue);
+}
 footer {
   background-color: #31313d;
 }
+
 /* HEADER AND NAV BAR */
 body {
   margin: 0;
@@ -128,6 +132,8 @@ a {
   gap: 5px;
 }
 
+/* SECTION THREE */
+
 .section-three {
   display: flex;
   flex-direction: column;
@@ -145,6 +151,41 @@ a {
   padding: 10px;
   margin-bottom: 50px;
 }
+
+/* SECTION FOUR */
+
+.section-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up-box {
+  border-radius: 10px;
+  padding: 50px;
+  margin-bottom: 50px;
+  display: Flex;
+  gap: 20px;
+}
+
+.sign-up-text {
+  font-size: 24px;
+}
+
+.book-button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 15px;
+  border: 4px solid darkblue;
+  transition-duration: 0.4s;
+}
+
+.book-button:hover {
+  background-color: darkblue;
+  color: white;
+}
+/* FOOTER */
 
 footer {
   display: Flex;

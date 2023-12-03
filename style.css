@@ -118,6 +118,7 @@ a {
   width: 280px;
   height: auto;
   display: flex;
+  border-radius: 10px;
 }
 
 .photos-div {

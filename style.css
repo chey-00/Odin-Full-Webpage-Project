@@ -12,6 +12,17 @@
   background-color: #364c6b;
 }
 
+.master-section {
+  background-image: linear-gradient(#364c6b, lightgray);
+}
+
+.testimonial-box {
+  background-color: azure;
+}
+
+footer {
+  background-color: #31313d;
+}
 /* HEADER AND NAV BAR */
 body {
   margin: 0;
@@ -71,6 +82,7 @@ a {
   font-size: 26px;
   height: auto;
   flex: 0 1 800px;
+  text-align: Center;
 }
 
 .descrip-header {
@@ -88,4 +100,56 @@ a {
   max-width: 550px;
   height: auto;
   border-radius: 10px;
+}
+
+/* SECTION TWO */
+
+.section-two-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding: 25px 0;
+}
+#Service-photos {
+  width: 280px;
+  height: auto;
+  display: flex;
+}
+
+.photos-div {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(54, 89, 155);
+  font-weight: bold;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  gap: 5px;
+}
+
+.section-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  font-size: 26px;
+}
+
+.testimonial-box {
+  border-radius: 15px;
+  max-width: 800px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+footer {
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-weight: bold;
 }

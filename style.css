@@ -5,7 +5,7 @@
 /* BACKGROUND COLORS */
 
 .header-nav {
-  background-color: #31313d;
+  background-color: #364c6b;
 }
 
 .section-one {
@@ -69,7 +69,6 @@ a {
 
 .section-one {
   display: Flex;
-  margin-top: 50px;
 }
 .container-one {
   display: flex;

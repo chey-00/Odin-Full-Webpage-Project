@@ -9,11 +9,11 @@
 }
 
 .section-one {
-  background-color: #364c6b;
+  background-image: linear-gradient(#364c6b, lightgray);
 }
 
-.master-section {
-  background-image: linear-gradient(#364c6b, lightgray);
+.section-three {
+  background-image: linear-gradient(to top, #364c6b, lightgray);
 }
 
 .testimonial-box {
@@ -69,6 +69,7 @@ a {
 
 .section-one {
   display: Flex;
+  margin-top: 50px;
 }
 .container-one {
   display: flex;
@@ -160,6 +161,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 .sign-up-box {
   border-radius: 10px;

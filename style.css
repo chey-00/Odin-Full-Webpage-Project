@@ -53,6 +53,7 @@ ul {
 
 li {
   list-style: none;
+  z-index: 1;
 }
 
 a {
@@ -130,6 +131,7 @@ a {
 
 #descrip-text-two,
 #descrip-text-four {
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   transform: rotate(9deg);
 }
@@ -137,7 +139,7 @@ a {
 #descrip-text-three,
 #descrip-text-six {
   transform: rotate(-12deg);
-
+  margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
 

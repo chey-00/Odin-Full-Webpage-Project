@@ -4,16 +4,8 @@
 
 /* BACKGROUND COLORS */
 
-.header-nav {
-  background-color: #364c6b;
-}
-
-.section-one {
+body {
   background-image: linear-gradient(#364c6b, rgb(255, 255, 226));
-}
-
-#master-section {
-  background-image: linear-gradient(to top, #364c6b, rgb(255, 255, 226));
 }
 
 .testimonial-box {
@@ -74,6 +66,8 @@ a {
   max-height: 7vh;
   margin-top: 4px;
   padding: 0.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2rem;
 }
 
 /* SECTION ONE */
@@ -81,26 +75,24 @@ a {
 .section-one {
   display: Flex;
   flex-wrap: wrap;
-}
-
-#descrip-header {
-  color: rgb(19, 9, 37);
-  text-decoration: underline;
-  font-weight: bold;
-  font-size: 1.4rem;
-  text-align: center;
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-top: 2.8rem;
+  align-content: center;
+  margin-left: 2.5rem;
+  margin-right: 2rem;
 }
 
 .descrip-header {
+  color: rgb(19, 9, 37);
   box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.4rem;
   padding: 1.5rem;
   border-radius: 2rem;
-  margin-right: 1rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 2.8rem;
 }
 
 #stickies-ctn {
@@ -133,25 +125,19 @@ a {
 }
 
 #descrip-text-one {
-  margin-left: 1.5rem;
-  margin-right: 2rem;
   margin-top: 4.5rem;
 }
 
 #descrip-text-two,
 #descrip-text-four {
-  margin-left: 1rem;
-  margin-right: 1.8rem;
   margin-bottom: 1rem;
-  transform: rotate(-10deg);
+  transform: rotate(9deg);
 }
 
 #descrip-text-three,
 #descrip-text-six {
-  transform: rotate(10deg);
+  transform: rotate(-12deg);
 
-  margin-left: 2rem;
-  margin-right: 1.8rem;
   margin-bottom: 2rem;
 }
 
@@ -162,45 +148,57 @@ a {
   width: 100%;
 }
 .contact-logo {
-  max-width: 16rem;
-  margin-right: 1rem;
+  max-width: 13rem;
   margin-top: 0.8rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px 7px rgba(33, 33, 33, 0.7);
 }
 
 /* SECTION TWO */
 
+.section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
 .section-two-title {
   font-size: 1.8rem;
   text-align: center;
   font-weight: bold;
   padding: 25px 0;
-  margin-right: 1rem;
-  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px 7px rgba(33, 33, 33, 0.7);
 }
 #Service-photos {
-  max-width: 265px;
+  max-width: 15rem;
   height: auto;
-  display: flex;
   border-radius: 10px;
+  display: flex;
 }
 
 .photos-div {
   display: flex;
-  justify-content: space-between;
   text-align: center;
   font-size: 18px;
   color: #364c6b;
   font-weight: bold;
   flex-wrap: wrap;
-  padding: 20px 10px;
   gap: 5px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* SECTION THREE */
 
 .section-three {
+  margin-left: 2rem;
+  margin-right: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,15 +213,16 @@ a {
 
 .testimonial-box {
   border-radius: 15px;
-  max-width: 250px;
+  max-width: 210px;
   padding: 10px;
   margin-bottom: 50px;
-  margin-right: 1rem;
 }
 
 /* SECTION FOUR */
 
 .section-four {
+  margin-left: 2rem;
+  margin-right: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,7 +238,6 @@ a {
   flex-direction: column;
   gap: 2rem;
   max-width: 15rem;
-  margin-right: 1rem;
 }
 
 .sign-up-text {
@@ -269,43 +267,31 @@ footer {
   height: 50px;
   font-weight: bold;
   color: white;
-  margin-right: 1rem;
+  font-size: 0.7rem;
 }
 
 /* MEDIA QUERIES FOR LARGE SCREENS */
 
-/* @media (min-width: 400px) {
-  .header-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 8vh;
+@media (min-width: 400px) {
+  .contact-logo {
+    max-width: 25%;
   }
 
-  ul {
-    display: Flex;
-    gap: 1rem;
-    margin-right: 10%;
-    justify-content: center;
-    align-content: center;
+  /* ANIMATIONS FOR LARGE SCREENS ONLY */
+
+  .photos-div {
+    animation: slidein 4s;
   }
 
-  li {
-    list-style: none;
-  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
 
-  a {
-    color: white;
-    text-decoration: underline;
-    font-size: 1.2rem;
-  }
-
-  .logo-img {
-    max-width: 95%;
-    max-height: 100%;
-    margin-top: 4px;
-    display: flex;
-    padding: 5px;
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 }
- */
